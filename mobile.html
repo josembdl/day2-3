@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Page Title</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script>
+
+</head> 
+
+<body> 
+        
+    <!-- PRINCIPAL -->
+    <div data-role="page" id="principal">
+    <div data-role="header">
+        <h1>Menu</h1>
+    </div>
+    <div data-role="content">   
+             <ul data-role="listview" >
+            <li><a href="#menu1" data-transition="pop">menu 1</a></li>
+            <li><a href="#menu2" data-transition="flip">menu 2</a></li>
+            <li><a id="menutres" href="#menu3" data-transition="slide">menu 3</a></li>
+            <li><a href="#animation" data-role="button">Animacion</a></li>
+            <li><a href="http://localhost/day1/pages/sample1.php">Sample 1</a></li>
+            
+            <li><textarea id="alias" autofocus> </textarea></li>
+            <li><button id="buttonday1">day1</button></li>
+            <li><div id="response" class="res">Respuesta.</div></li>
+            <li><div id="msg" class="msg"></div></li>
+    
+            
+             </ul>
+    </div>
+    <div data-role="footer">
+        <h2> - Menu - </h2>
+    </div>
+    </div>
+    <!-- /PRINCIPAL -->
+
+    <!-- MENU1 -->
+    <div data-role="page" id="menu1">
+    
+        <div data-role="header"> 
+            <h1>Menu 1</h1>
+        </div>
+        <div data-role="content"> 
+            <p>Contenido del Menu 1</p>
+            <a href="#principal" data-rel="back">Volver</a>
+        </div>
+        <div data-role="footer"> 
+            <h2> - Menu 1 - </h2>
+        </div>
+    </div>
+    
+        <!-- MENU2 -->
+    <div data-role="page" id="menu2">
+    
+        <div data-role="header"> 
+            <h1>Menu 2</h1>
+        </div>
+        <div data-role="content"> 
+            <p>Contenido del Menu 2</p>
+            <a href="#principal" data-role="button" data-theme="d" data-inline="true">Volver</a>
+        </div>
+        <div data-role="footer"> 
+            <h2> - Menu 2 - </h2>
+        </div>
+    </div>
+        
+        <!-- MENU3 -->
+    <div data-role="page" id="menu3">
+    
+        <div data-role="header"> 
+            <h1>Menu 3</h1>
+        </div>
+        <div data-role="content"> 
+            <p>Contenido del Menu 3</p>
+        </div>
+        <div data-role="footer"> 
+            <a href="#principal" data-role="button" data-theme="e" data-inline="true">Volver</a>
+            <h2> - Menu 3 - </h2>
+
+        </div>
+    </div>
+    
+        <!-- ANIMACION -->
+     <div data-role="page" id="animation">
+         <div data-role="header"> 
+            <h1>Animacion</h1>
+        </div>
+        <div data-role="content">
+            <br><IMG SRC="http://code.jquery.com/mobile/1.1.0-rc.1/images/ajax-loader.gif">ESC para volver</br>
+        </div>
+         <div data-role="footer"> 
+            <h1> - Animacion - </h1>
+        </div>
+
+
+</div>
+        
+    <script src="Script.js" type="text/javascript"></script>    
+        
+</body>
+
+</html>
