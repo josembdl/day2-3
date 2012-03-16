@@ -3,11 +3,15 @@ $(document).ready(function() {
 	alert("Listo!");
 });
 
+$("#botonAnim").click(function(){   
+    $.mobile.showPageLoadingMsg();
+});
 
-$("#animation").keydown(function(e){
+$(document).keyup(function(e){
         var KEYCODE_ESC = 27;
         if(e.keyCode == KEYCODE_ESC){
-            $.mobile.changePage("#principal");
+            $.mobile.hidePageLoadingMsg();
+            // $.mobile.changePage("#principal");
         }
     });
 
